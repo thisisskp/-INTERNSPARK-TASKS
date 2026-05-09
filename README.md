@@ -49,6 +49,21 @@ Student data is stored in MySQL database using Spring Data JPA.
 Project screenshots are available inside the screenshots folder.
 
 ---
+## Task 3 - Unit Testing and Logging
 
+### Features Added
+- Added SLF4J Logging
+- Added JUnit Test Cases
+- Tested Student Entity Successfully
+
+### Logging
+- Logs added for API operations using Logger and LoggerFactory.
+
+### Unit Testing
+- JUnit test created for Student entity.
+- Test executed successfully.
+
+### Screenshots
+Project screenshots added in screenshots folder.
 ## 👨‍💻 Author
 Sumeet Kumar Prasad
