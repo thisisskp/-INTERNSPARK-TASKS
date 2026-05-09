@@ -1,51 +1,54 @@
-# -INTERNSPARK-TASKS
-Java Internship Task - Student REST API
+# Java Internship Tasks - Student REST API
 
-📌 Project Overview
-
-This project is a REST API built using Spring Boot to manage student data.
+## 📌 Project Overview
+This project is a REST API built using Spring Boot and MySQL for managing student data.
 
 ---
 
-🚀 Features
-
-- Add Student (POST)
-- Get Students (GET)
-- Update Student (PUT)
-- Delete Student (DELETE)
-
----
-
-🔗 API Endpoints
-
-POST: http://localhost:8082/students
-GET: http://localhost:8082/students
+## 🚀 Features
+- Add Student
+- Get Students
+- Update Student
+- Delete Student
+- MySQL Database Integration
 
 ---
 
-🛠 Technologies Used
-
+## 🛠 Technologies Used
 - Java
 - Spring Boot
+- Spring Data JPA
+- MySQL
 - Maven
 - Postman
 
 ---
 
-▶️ How to Run
+## 🔗 API Endpoints
 
-1. Open project in Eclipse
-2. Run DemoApplication.java
-3. Test using Postman
+### Add Student
+POST /students
+
+### Get Students
+GET /students
+
+### Update Student
+PUT /students/{id}
+
+### Delete Student
+DELETE /students/{id}
 
 ---
 
-📸 Screenshots
-
-Screenshots are available in this repository.
+## 🗄 Database Integration
+Student data is stored in MySQL database using Spring Data JPA.
 
 ---
 
-👨‍💻 Author
+## 📸 Screenshots
+Project screenshots are available inside the screenshots folder.
 
+---
+
+## 👨‍💻 Author
 Sumeet Kumar Prasad
