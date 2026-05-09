@@ -1,4 +1,6 @@
 package com.example.demo;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 	import org.springframework.web.bind.annotation.*;
 	import java.util.List;
@@ -6,7 +8,8 @@ package com.example.demo;
 	@RestController
 	@RequestMapping("/students")
 	public class StudentController {
-
+		private static final Logger logger =
+				LoggerFactory.getLogger(StudentController.class);
 	    private final StudentRepository repo;
 
 	    public StudentController(StudentRepository repo) {
@@ -16,12 +19,15 @@ package com.example.demo;
 	    // CREATE
 	    @PostMapping
 	    public Student addStudent(@RequestBody Student student) {
+	    	logger.info("Adding student");
 	        return repo.save(student);
 	    }
 
 	    // READ
 	    @GetMapping
 	    public List<Student> getAllStudents() {
+	    	logger.info("Fetching all students");
+	    	
 	        return repo.findAll();
 	    }
 
